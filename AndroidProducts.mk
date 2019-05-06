@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_taimen.mk \
-    $(LOCAL_DIR)/colt_taimen.mk
+    $(LOCAL_DIR)/aokp_taimen.mk
