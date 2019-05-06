@@ -1,14 +1,24 @@
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1440x2880
+TARGET_BOOTANIMATION_SIZE := 1080p
 
-# Inherit some common AOKP stuff.
-$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
+
+ # Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+
+ #treble
+$(call inherit-product, build/make/target/product/treble_common_64.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := aokp_taimen
+PRODUCT_NAME := omni_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
