@@ -32,7 +32,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:9/PQ3A.190505.001/5373320:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190505.001 5373320 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:9/PQ3A.190605.003/5524043:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190605.003 5524043 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
