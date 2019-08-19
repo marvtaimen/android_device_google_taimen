@@ -30,9 +30,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:9/PQ3A.190801.002/5670241:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190801.002 5670241 release-keys"
+    PRODUCT_NAME="taimen" \
+    TARGET_DEVICE="taimen"
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)

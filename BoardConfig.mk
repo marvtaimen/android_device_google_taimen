@@ -39,3 +39,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
 # VTS DTBO Verification. This kernel cmdline parameter should be added by the bootloader
 # for all future devices.
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=12
+
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_taimen
+TARGET_RECOVERY_DEVICE_MODULES := libinit_taimen
