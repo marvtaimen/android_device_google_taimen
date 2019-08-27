@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 # Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/products/common.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 TARGET_DEVICE := taimen
 
