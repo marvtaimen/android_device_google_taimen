@@ -1,4 +1,5 @@
 # Copyright (C) 2017-2019 The Dirty Unicorns Project
+# Copyright (C) 2019 LiquidRemix Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include DU common configuration
-include vendor/nexus/config/common_full_phone.mk
+# Inherit some common Liquid stuff.
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -23,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := abc_taimen
+PRODUCT_NAME := liquid_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 2 XL
