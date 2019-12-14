@@ -20,4 +20,4 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo havoc_taimen-userdebug
+COMMON_LUNCH_CHOICES havoc_taimen-userdebug
