@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include DU common configuration
-include vendor/nexus/config/common_full_phone.mk
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := abc_taimen
+PRODUCT_NAME := bliss_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 2 XL
